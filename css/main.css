@@ -193,34 +193,26 @@ button{
 
 .cases__item-1{
     background-image: url(../img/cases/cases-1.png);
-    height: 416px;
-    width: 100%;
+    
 }
 
 .cases__item-2{
     background-image: url(../img/cases/cases-2.png);
-    height: 416px;
-    width: 100%;
+    
 }
 .cases__item-3{
     background-image: url(../img/cases/cases-3.png);
-    height: 416px;
-    width: 100%;
+     
 }
 .cases__item-4{
     background-image: url(../img/cases/cases-4.png);
-    height: 416px;
-    width: 100%;
+    
 }
 .cases__item-5{
     background-image: url(../img/cases/cases-5.png);
-    height: 416px;
-    width: 100%;
 }
 .cases__item-6{
-    background-image: url(../img/cases/cases-6.png);
-    height: 416px;
-    width: 100%;
+    background-image: url(../img/cases/cases-6.png); 
 }
 
 .cases__item-1:hover,
@@ -228,13 +220,13 @@ button{
 .cases__item-3:hover,
 .cases__item-4:hover,
 .cases__item-5:hover,
-.cases__item-6:hover{
-    border-radius: 6px;
-    border: 1px solid var(--stroke-color, #C536EF);
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #0F0F0F;
+.cases__item-6:hover{  
+    background: lightgray 50% / cover no-repeat, #0F0F0F;
     /* card_hover-effect */
     box-shadow: 0px 4px 107px 0px rgba(178, 61, 224, 0.47) inset;
     transition: all 0.5s;
+    border: 1px solid var(--stroke-color, #C536EF);
+
 }
 
 .cases__items{
@@ -243,29 +235,22 @@ button{
     gap: 20px;
 }
 
-.text__top{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-    padding-top: 36px;
-    padding-left: 41px;
-    text-align: start;
+.cases__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 41px;
+    height: 416px;
+    border-radius: 6px; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
 
-.text__bottom{
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    padding-top: 239px;
-    padding-left: 41px;
-    text-align: start;
+.cases__footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.cases__btn{
-    padding-right: 36px;
 }
 
 .cases__button{
