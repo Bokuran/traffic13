@@ -5,196 +5,365 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper swiper1">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="./img/slider-1.png" alt="">
-                    <img src="./img/slider-2.png" alt="">
-                    <img src="./img/slider-3.png" alt="">
-                    <img src="./img/slider-4.png" alt="">
-                    <img src="./img/slider-5.png" alt="">
-                    <img src="./img/slider-6.png" alt="">
-                    <img src="./img/slider-7.png" alt="">
-                    <img src="./img/slider-8.png" alt="">
+    <header class="display header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="logo">
+                    <img src="./img/header/logo.svg" alt="">
                 </div>
-                <div class="swiper-slide">
-                    <img src="./img/slider-1.png" alt="">
-                    <img src="./img/slider-2.png" alt="">
-                    <img src="./img/slider-3.png" alt="">
-                    <img src="./img/slider-4.png" alt="">
-                    <img src="./img/slider-5.png" alt="">
-                    <img src="./img/slider-6.png" alt="">
-                    <img src="./img/slider-7.png" alt="">
-                    <img src="./img/slider-8.png" alt="">
+                <nav class="nav__link">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <div class="heder__links">
+                        <button class="header__btn">Заполнить бриф</button>
+                    </div>
+                    <div class="heder__menu__inner">
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./img/slider-1.png" alt="">
-                    <img src="./img/slider-2.png" alt="">
-                    <img src="./img/slider-3.png" alt="">
-                    <img src="./img/slider-4.png" alt="">
-                    <img src="./img/slider-5.png" alt="">
-                    <img src="./img/slider-6.png" alt="">
-                    <img src="./img/slider-7.png" alt="">
-                    <img src="./img/slider-8.png" alt="">
+            </div>
+            <div class="header__title">
+                <img class="header__title-img" src="./img/header/title.svg" alt="">
+                <p class="header__text">БЫТЬ ХРАБРЫМИ, ВДОХНОВЛЯТЬ,<br> И РАСШИРЯТЬ ПРЕДЕЛЫ ВОЗМОЖНОГО</p>
+            </div>
+        </div>
+    </header>
+    <nav class="menu">
+        <div class="container container-menu">
+            <div class="header__top">
+                <div class="logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </div>
+                <div class="header__button">
+                    <button class="header__btn">Заполнить бриф</button>
+                    <div class="close-btn">
+                        <img src="./img/header/close.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="menu__list">
+                <ul class="list__top">
+                    <li><a href="#">Главная</a>
+                        <a class="list__bottom" href="">FAQ</a>
+                    </li>
+                    <li><a href="#">Услуги</a>
+                        <a class="list__bottom" href="">Дайджест</a>
+                    </li>
+                    <li><a href="#">Кейсы</a>
+                        <a class="list__bottom" href="">Контакты</a>
+                    </li>
+                    <li><a href="#">О нас</a>
+                        <a class="list__bottom" href="">Партнерам</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="display vide">
+            <div class="container">
+                <div class="video__content">
+                    <div class="video__left">
+                        <p class="vide__text">Наша команда всегда стремится совершенствовать старые подходы, искать
+                            новые
+                            инструменты и каналы развития, учиться, не усложнять, общаться, вдохновлять людей и
+                            продвигать
+                            бренды, в которые действительно верит.</p>
+                        <p class="vide__text">Для нас люди на первом месте. Мы созданы не для всех, но мы созданы для
+                            тех,
+                            кто верит, что цель - это не просто звук, или слово, или деловое предложение, а образ жизни
+                            и
+                            мысли. Для тех, кто убежден, что вместе мы сможем достичь немыслимого!</p>
+                    </div>
+                    <div class="video__right">
+                        <iframe width="831" height="665" src="https://www.youtube.com/embed/5lofljCF12E"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="display cases">
+            <div class="container">
+                <div class="cases__title">
+                    <h1>КЕЙСЫ</h1>
+                </div>
+                <div class="cases__items">
+                    <div class="cases__item-1">
+                        <div class="text__top">Помощь студентам <br> обучающимся дистанционно</div>
+                        <div class="text__bottom">Разработка сайта, выход в ТОП-10 <br> и настройка рекламы в серой
+                            нише
+                            <div class="cases__btn">
+                                <a href=""><img src="./img/cases/cases-btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__item-2">
+                        <div class="text__top">Юридическое агенство <br> по различным спорам в суде</div>
+                        <div class="text__bottom">Выход на более качественные заявки <br> с помощью настройки
+                            Яндекс.Директ
+                            <div class="cases__btn">
+                                <a href=""><img src="./img/cases/cases-btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__item-3">
+                        <div class="text__top">Аренда спецтехники <br> через SEO и Яндекс.Директ</div>
+                        <div class="text__bottom">Как мы получили 23 заявки по 347 рублей <br> и вышли в ТОП-10 за 3
+                            месяца работы
+                            <div class="cases__btn">
+                                <a href=""><img src="./img/cases/cases-btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__item-4">
+                        <div class="text__top">Агенство недвижимости <br> по подбору новостроек</div>
+                        <div class="text__bottom">Реклама в Яндекс.Директ <br> Заявки под новостройки по 313 рублей
+                            <div class="cases__btn">
+                                <a href=""><img src="./img/cases/cases-btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__item-5">
+                        <div class="text__top">Рекрутинговое агенство <br> по подбору персонала</div>
+                        <div class="text__bottom">Как мы сделали 18 заявок по 411 рублей <br> в сфере подбора персонала
+                            <div class="cases__btn">
+                                <a href=""><img src="./img/cases/cases-btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__item-6">
+                        <div class="text__top">Федеральное агенство <br> коммерческой недвижимости</div>
+                        <div class="text__bottom">725 рублей за заявку на аренду или <br> покупку коммперческой
+                            недвижимости
+                            <div class="cases__btn">
+                                <a href=""><img src="./img/cases/cases-btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="cases__button"><a href="">Смотреть ещё</a></button>
+            </div>
+        </section>
+        <section class="display customers">
+            <div class="container">
+                <div class="slider__title">
+                    <h1>КЛИЕНТЫ</h1>
+                </div>
+                <div class="customers__content swiper swiper1">
+                    <div class="customers__items swiper-wrapper">
+                        <div class="customers__item swiper-slide">
+                            <img src="/img/slider/slider-1.png" alt="">
+                            <img src="./img/slider/slider-2.png" alt="">
+                            <img src="./img/slider/slider-3.png" alt="">
+                            <img src="./img/slider/slider-4.png" alt="">
+                            <img src="./img/slider/slider-5.png" alt="">
+                            <img src="./img/slider/slider-6.png" alt="">
+                            <img src="./img/slider/slider-7.png" alt="">
+                            <img src="./img/slider/slider-8.png" alt="">
+                        </div>
+                        <div class="customers__item swiper-slide">
+                            <img src="/img/slider/slider-1.png" alt="">
+                            <img src="./img/slider/slider-2.png" alt="">
+                            <img src="./img/slider/slider-3.png" alt="">
+                            <img src="./img/slider/slider-4.png" alt="">
+                            <img src="./img/slider/slider-5.png" alt="">
+                            <img src="./img/slider/slider-6.png" alt="">
+                            <img src="./img/slider/slider-7.png" alt="">
+                            <img src="./img/slider/slider-8.png" alt="">
+                        </div>
+                        <div class="customers__item swiper-slide">
+                            <img src="/img/slider/slider-1.png" alt="">
+                            <img src="./img/slider/slider-2.png" alt="">
+                            <img src="./img/slider/slider-3.png" alt="">
+                            <img src="./img/slider/slider-4.png" alt="">
+                            <img src="./img/slider/slider-5.png" alt="">
+                            <img src="./img/slider/slider-6.png" alt="">
+                            <img src="./img/slider/slider-7.png" alt="">
+                            <img src="./img/slider/slider-8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-btn">
+                        <div class="swiper-button-prev swiper-button-prev1">
+                            <img src="./img/slider/prev.png" alt="">
+                        </div>
+                        <div class="swiper-button-next swiper-button-next1">
+                            <img src="./img/slider/prev.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="display certificate">
+            <div class="container">
+                <div class="certificate__content swiper swiper2">
+                    <div class="certificate__items swiper-wrapper">
+                        <div class="certificate__item swiper-slide">
+                            <div class="certificate__left">
+                                <img class="certificate__icon" src="./img/certificate/icon-1.png" alt="">
+                                <div class="certificate__info">
+                                    <div class="certificate__name">Елена Киселева</div>
+                                    <div class="certificate__company">Агенство “Люди Дела”</div>
+                                </div>
+                                <div class="certificate__btn swiper-btn">
+                                    <div class="swiper-button-prev swiper-button-prev2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-next2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="certificate__center">
+                                <p class="certificate__center-text">"Агентство рекрутинга “Люди Дела” выражает
+                                    благодарность маркетинговому агентству
+                                    “Traffic13”
+                                    за оперативную и качественную настройку и ведение рекламной компании, а также за
+                                    разработку
+                                    Landing Page.
+                                </p>
+                                <p>
+                                    Рекламная компания, которую разработали для нас специалисты агентства, работает
+                                    эффективно и
+                                    корректировалась с учетом всех наших пожеланий.
+                                </p>
+                            </div>
+                            <div class="certificate__right">
+                                <img src="./img/certificate/certificate-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="certificate__item swiper-slide">
+                            <div class="certificate__left">
+                                <img class="certificate__icon" src="./img/certificate/icon-1.png" alt="">
+                                <div class="certificate__btn swiper-btn">
+                                    <div class="swiper-button-prev swiper-button-prev2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-next2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="certificate__info">
+                                    <div class="certificate__name">Елена Киселева</div>
+                                    <div class="certificate__company">Агенство “Люди Дела”</div>
+                                </div>
+
+                            </div>
+                            <div class="certificate__center">
+                                <p class="certificate__center-text">"Агентство рекрутинга “Люди Дела” выражает
+                                    благодарность маркетинговому агентству
+                                    “Traffic13”
+                                    за оперативную и качественную настройку и ведение рекламной компании, а также за
+                                    разработку
+                                    Landing Page.
+                                </p>
+                                <p>
+                                    Рекламная компания, которую разработали для нас специалисты агентства, работает
+                                    эффективно и
+                                    корректировалась с учетом всех наших пожеланий.
+                                </p>
+                            </div>
+                            <div class="certificate__right">
+                                <img src="./img/certificate/certificate-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="application">
+            <div class="container">
+                <div class="application__text">
+                    <h2 class="application__title">ОСТАВИТЬ ЗАЯВКУ</h2>
+                    <p>Давайте поговорим о том,</p>
+                    <p class="application__text-decor">как мы можем сделать <span>отличную работу</span> вместе</p>
+                </div>
+                <div class="application__content">
+                    <div class="application__left">
+                        <div class="application__name">ФИО <span>*</span></div>
+                        <input type="text">
+                        <div class="application__name">Сайты</div>
+                        <input type="text">
+                        <div class="application__name">Телефон</div>
+                        <input type="text">
+                    </div>
+                    <div class="application__center">
+                        <div class="application__name">Почта <span>*</span></div>
+                        <input type="text">
+                        <div class="application__name">Расскажите о компании</div>
+                        <input type="text">
+                        <div class="application__name">Когда удобно принять звонок</div>
+                        <input type="text">
+                    </div>
+                    <div class="application__right">
+                        <div class="application__right-chois">Какие услуги интересуют?</div>
+                        <select>
+                            <option>SEO продвижение сайтов</option>
+                            <option>Настройка</option>
+                            <option>Настройка и ведение контекстной рекламы</option>
+                        </select>
+                        <button class="application__btn">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contetn">
+                <div class="footer__contetn-logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </div>
+                <div class="footer__contetn-messenger">
+                    <div class="footer__text">Полезный дайджест <br>для Вашего бизнеса</div>
+                    <div class="footer__content-icons">
+                        <img class="footer__text-vk" src="./img/footer/icon-vk.png" alt="">
+                        <img src="./img/footer/icon-tg.png" alt="">
+                    </div>
+                </div>
+                <div class="footer__contetn-info">
+                    <div class="footer__time">Пн - Пт (9:00 - 18:00 МСК)</div>
+                    <div class="footer__tel">Тел: 8 (965) 548 74 26</div>
+                    <div class="footer__email">Email: info@traffic13.ru</div>
+                </div>
+                <div class="footer__content-contacts">
+                    <div class="footer__content-write">Написать нам</div>
+                    <div class="footer__content-contacts-icon">
+                        <img src="./img/footer/icon-vk-s.png" alt="">
+                        <img src="./img/footer/icon-tg-s.png" alt="">
+                        <img src="./img/footer/icon-whatsapp-s.png" alt="">
+                    </div>
+                </div>
+                <div class="footer__contetn-button">
+                    <div class="footer__contetn-partner">По партнерству: <br>mezentsev66@yandex.ru</div>
+                    <button class="footer__contetn-btn">Заполнить бриф</button>
                 </div>
             </div>
         </div>
-        <div class="swiper-btn">
-            <div class="swiper-button-prev swiper-button-prev1">
-                <img src="./img/prev.png" alt="">
-            </div>
-            <div class="swiper-button-next swiper-button-next1">
-                <img src="./img/prev.png" alt="">
-            </div>
-        </div>
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper swiper2">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="./img/slider-1.png" alt="">
-                    <img src="./img/slider-2.png" alt="">
-                    <img src="./img/slider-3.png" alt="">
-                    <img src="./img/slider-4.png" alt="">
-                    <img src="./img/slider-5.png" alt="">
-                    <img src="./img/slider-6.png" alt="">
-                    <img src="./img/slider-7.png" alt="">
-                    <img src="./img/slider-8.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/slider-1.png" alt="">
-                    <img src="./img/slider-2.png" alt="">
-                    <img src="./img/slider-3.png" alt="">
-                    <img src="./img/slider-4.png" alt="">
-                    <img src="./img/slider-5.png" alt="">
-                    <img src="./img/slider-6.png" alt="">
-                    <img src="./img/slider-7.png" alt="">
-                    <img src="./img/slider-8.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/slider-1.png" alt="">
-                    <img src="./img/slider-2.png" alt="">
-                    <img src="./img/slider-3.png" alt="">
-                    <img src="./img/slider-4.png" alt="">
-                    <img src="./img/slider-5.png" alt="">
-                    <img src="./img/slider-6.png" alt="">
-                    <img src="./img/slider-7.png" alt="">
-                    <img src="./img/slider-8.png" alt="">
-                </div>
-                
-            </div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-btn">
-            <div class="swiper-button-prev swiper-button-prev2">
-                <img src="./img/prev.png" alt="">
-            </div>
-            <div class="swiper-button-next swiper-button-next2">
-                <img src="./img/prev.png" alt="">
-            </div>
-        </div>
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-    </div>
+    </footer>
 
 
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="certificate__left">
-    <img src="./img/certificate/icon-1.png" alt="">
-    <div class="certificate__info">
-        <div class="certificate__name">Елена Киселева</div>
-        <div class="certificate__company">Агенство “Люди Дела”</div>
-    </div>
-</div>
-<div class="certificate__center">
-    <p>"Агентство рекрутинга “Люди Дела” выражает благодарность маркетинговому агентству
-        “Traffic13”
-        за оперативную и качественную настройку и ведение рекламной компании, а также за
-        разработку
-        Landing Page.
-    </p>
-    <p>
-        Рекламная компания, которую разработали для нас специалисты агентства, работает
-        эффективно и
-        корректировалась с учетом всех наших пожеланий.
-    </p>
-</div>
-<div class="certificate__right">
-    <img src="./img/certificate/certificate-1.png" alt="">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const swiper = new Swiper('.swiper', {
-// Optional parameters
-direction: 'horizontal',
-loop: false,/* Бесконечная прокрутка слайдера */
-slidesPerView: 1,/* Какое кол-во показывать слайдеров на экране */
-
-// If we need pagination
-pagination: {
-el: '.swiper-pagination',
-},
-
-// Navigation arrows
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-},
-
-// And if we need scrollbar
-scrollbar: {
-el: '.swiper-scrollbar',
-},
-});
