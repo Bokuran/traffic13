@@ -1,0 +1,51 @@
+body{
+    background-color: #000;
+}
+
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.swiper-slide{
+    display: grid !important;/* Нужно для того что бы перебить дефолтный дисплей слайдера а иначе работать не будет */
+    align-items: center;
+    justify-items: flex-end;
+    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 30px;
+    border: 1px solid var(--stroke-color, #C536EF);
+    background: linear-gradient(170deg, rgba(118, 118, 118, 0.26) 0%, rgba(255, 87, 255, 0.00) 100%);
+    padding: 80px 78px 34px 78px;
+}
+
+.swiper-btn{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    padding-top: 33px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    position: static !important;
+    width: 62px !important;
+    height: 100% !important;
+    margin-top: auto !important;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+.swiper-button-next{
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: none !important;
+}
