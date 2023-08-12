@@ -439,7 +439,6 @@ button{
 }
 
 .application__input input{
-    
     border-bottom: 1px solid;
     width: 100%;
     resize: horizontal;
@@ -450,11 +449,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-
-.application__center{
-    padding: 0 84px 0 100px;
+    column-gap: 90px;
 }
 
 .application__button{
