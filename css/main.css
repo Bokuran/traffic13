@@ -27,7 +27,7 @@ button{
 }
 
 .display{
-    display: none;
+    
 }
 
 /**/
@@ -158,14 +158,12 @@ button{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 110.5%;
 }
 
 .video__content{
     display: flex;
     padding-top: 293px;
+    width: 100%;
 }
 
 .vide__text{
@@ -179,8 +177,16 @@ button{
     margin-bottom: 78px;
 }
 
+.video__left{
+    max-width: 699px;
+}
+
 .video__right{
     padding-left: 82px;
+}
+
+.video__play{
+    max-width: 831px;
 }
 
 .cases__title{
@@ -338,13 +344,12 @@ button{
 .certificate__item{
     display: flex !important;
     justify-content: space-between;
+    position: relative;
 }
 
 .certificate__btn{
     position: absolute;
-    bottom: 20%;
-    max-width: 159px;
-    max-height: 62px;
+    bottom: 0;
 }
 
 .certificate__icon{
@@ -359,7 +364,6 @@ button{
 
 .certificate__left{
     display: flex;
-    position: relative;
     padding-top: 80px;
 }
 
@@ -395,14 +399,6 @@ button{
     padding-top: 80px;
     padding-bottom: 40px;
 }
-
-
-
-
-
-
-
-
 
 .application{
     padding-top: 150px;
@@ -464,19 +460,6 @@ button{
     padding: 24px 0 24px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer__contetn{
     margin-top: 100px;
     font-size: 20px;
@@ -516,4 +499,170 @@ button{
 
 .footer__content-contacts-icon :not(:last-child){
     padding-right: 18px;
+}
+
+
+@media (max-width: 1000px){
+    .nav__link{
+        display: none;
+    }
+    .header__title{
+        padding-top: 150px;
+    }
+    .list__top{
+        font-size: 35px;
+    }
+    .menu__list ul{
+        gap: 20px;
+    }
+    .header__text{
+        font-size: 40px;
+    }
+    .video__content{
+        padding-top: 150px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .vide__text{
+        font-size: 20px;
+    }
+    .vide__text:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .video__right{
+        padding-left: 0;
+    }
+    .video__right iframe{
+        padding-top: 50px;
+        width: 800px;
+        height: 500px;
+    }
+    .certificate{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .certificate__icon{
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .certificate__left{
+        padding-top: 0;
+    }
+    .certificate__name{
+        font-size: 15px;
+    }
+    .certificate__company{
+        font-size: 14px;
+    }
+    .certificate__info{
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    .certificate__center{
+        font-size: 19px;
+    }
+    .certificate__center-text{
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .certificate__btn img {
+        max-width: 52px !important;
+        max-height: 52px !important;
+    }
+    .footer__contetn{
+        font-size: 15px;
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .header__button{
+        margin-right: 0;
+    }
+    .header__btn{
+        margin-right: 10px;
+    }
+    .menu__list ul{
+        gap: 10px;
+    }
+    .list__top{
+        font-size: 30px;
+    }
+    .list__bottom{
+        font-size: 30px;
+    }
+    .cases__title{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .cases__items{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .customers{
+        padding-bottom: 50px;
+    }
+    .customers__item{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .application{
+        padding-top: 50px;
+    }
+    .application__title{
+        font-size: 50px;
+    }
+    .application__text{
+        text-align: center;
+    }
+    .application__text p{
+        font-size: 20px;
+    }
+    .application__text span{
+        font-size: 20px;
+    }
+    .application__text-decor{
+        padding-left: 0;
+    }
+    .application__content{
+        justify-content: start;
+        flex-direction: column;
+    }
+    .application__input{
+        width: 100%;
+    }
+    .application__select{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .application__button{
+        width: 300px;
+        margin-top: 100px;
+    }
+    .application__chois{
+        width: 250px;
+        padding-top: 10px;
+    }
+    .application__input input{
+        margin-bottom: 20px;
+    }
+    .footer__contetn{
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        margin: 120px auto 0;
+    }
+    .certificate__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificate__btn{
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 320px){
+
 }
