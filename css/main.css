@@ -43,7 +43,7 @@ button {
     color: #D2D2D2;
 }
 
-.nav__link ul li:hover{
+.nav__link ul li:hover {
     color: #FF57FF;
     text-decoration-line: underline;
     transition: all 1s;
@@ -547,19 +547,21 @@ button {
 
 /*FOOTER END*/
 
-.services__pages{
+
+/*SERVICES START*/
+.services__pages {
     display: flex;
     width: 100%;
     position: relative;
     padding-top: 176px;
 }
 
-.services__pages-info{
+.services__pages-info {
     max-width: 1055px;
     padding-right: 20px;
 }
 
-.services__pages-title{
+.services__pages-title {
     font-size: 90px;
     font-weight: 700;
     background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
@@ -568,21 +570,21 @@ button {
     -webkit-text-fill-color: transparent;
 }
 
-.services__pages-text{
+.services__pages-text {
     font-size: 32px;
     line-height: 46px;
     padding-top: 76px;
 }
 
-.pages-text-top{
+.pages-text-top {
     padding-bottom: 106px;
 }
 
-.pages-text-center{
+.pages-text-center {
     padding-bottom: 31px;
 }
 
-.services__pages-game{
+.services__pages-game {
     border-radius: 20px;
     border: 2px solid #C536EF;
     background: #040104;
@@ -592,7 +594,7 @@ button {
     cursor: pointer;
 }
 
-.game__title{
+.game__title {
     background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -604,7 +606,7 @@ button {
     line-height: 50px;
 }
 
-.services__pages-game-numb{
+.services__pages-game-numb {
     background: var(--h-1-color, linear-gradient(118deg, #FFE195 0%, #FFE195 100%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -617,7 +619,7 @@ button {
     padding-bottom: 69px;
 }
 
-.game__btn{
+.game__btn {
     border-radius: 16px;
     border: 3px solid #7DF;
     box-shadow: 0px 0px 11px 0px rgba(160, 225, 247, 0.51);
@@ -625,14 +627,14 @@ button {
     margin-top: 37px;
 }
 
-.game__decor{
+.game__decor {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
 }
 
-.game__hover{
+.game__hover {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -647,25 +649,89 @@ button {
     border-radius: 20px;
 }
 
-.game__hover-text{
+.game__hover-text {
     font-size: 22px;
     padding: 278px 40px 48px 40px;
 }
 
-.game__hover-text-top{
+.game__hover-text-top {
     padding-bottom: 30px;
 }
 
-.game__btn-hover{
+.game__btn-hover {
     position: absolute;
     max-width: 273px;
     margin: 59px 0 48px 40px;
 }
 
-.services__pages-game:hover .game__hover{
+.services__pages-game:hover .game__hover {
     visibility: visible;
     opacity: 1;
 }
+
+/*SERVICES END*/
+
+/**/
+
+.accordion{
+    padding-top: 150px;
+}
+
+.ac .ac-trigger::after{
+    content: none;
+}
+
+.ac{
+    border-radius: 20px;
+    background: rgba(255, 87, 255, 0.06);
+    border: none;
+    margin: 0;
+}
+
+.ac .ac-trigger{
+    font: inherit;
+    color: #FFF;
+    font-size: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.list__item{
+    padding: 51px 73px 51px 93px;
+}
+
+.list__item:not(:last-child){
+    margin-bottom: 41px;
+}
+
+.list__item-text{
+    display: flex;
+    gap: 351px;
+    column-gap: 353px;
+}
+
+.list__item-text-lreft,
+.list__item-text-right{
+    padding: 35px 0 0 0;
+}
+
+.list__item-text-right ul{
+    position: relative;
+}
+
+.list__item-icon{
+    display: block;
+    transition: transform .5s;
+}
+
+.is-active .list__item-icon{
+    transform: rotate(45deg);
+}
+
+/**/
 
 @media (max-width: 1000px) {
     .nav__link {
