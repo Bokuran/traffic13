@@ -40,3 +40,5 @@ var swiper3 = new Swiper('.swiper3', {
     prevEl: '.swiper3.swiper-button-prev',
   },
 });
+
+new Accordion('.accordion-container');
