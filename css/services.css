@@ -1,0 +1,345 @@
+/*SERVICES START*/
+.services__pages {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-top: 176px;
+}
+
+.services__pages-info {
+    padding-right: 20px;
+}
+
+.services__pages-title {
+    font-size: 90px;
+    font-weight: 700;
+    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services__pages-text {
+    font-size: 32px;
+    line-height: 46px;
+    padding-top: 76px;
+    max-width: 1055px;
+}
+
+.pages-text-top {
+    padding-bottom: 106px;
+}
+
+.pages-text-center {
+    padding-bottom: 31px;
+}
+
+.services__pages-game {
+    border-radius: 20px;
+    border: 2px solid #C536EF;
+    background: #040104;
+    backdrop-filter: blur(9px);
+    padding: 40px 40px 80px;
+    position: relative;
+    cursor: pointer;
+    max-width: 519px;
+}
+
+.game-1{
+    display: none;
+}
+
+.game__title {
+    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 105.60525512695312px #000);
+    padding-top: 106px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.services__pages-game-numb {
+    background: var(--h-1-color, linear-gradient(118deg, #FFE195 0%, #FFE195 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 18.88372039794922px rgba(255, 225, 149, 0.81));
+    padding-top: 34px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    padding-bottom: 69px;
+}
+
+.game__btn {
+    border-radius: 16px;
+    border: 3px solid #7DF;
+    box-shadow: 0px 0px 11px 0px rgba(160, 225, 247, 0.51);
+    padding: 31px 51px;
+    margin-top: 37px;
+    position: relative;
+    z-index: 5;
+}
+
+.game__decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.game__hover {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(86, 34, 103, 0.00) 0%, rgba(36, 10, 45, 0.46) 0%, rgba(36, 10, 45, 0.83) 35.24%, rgba(36, 10, 45, 0.94) 100%);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+}
+
+.game__hover-text {
+    font-size: 22px;
+    padding: 278px 40px 48px 40px;
+}
+
+.game__hover-text-top {
+    padding-bottom: 30px;
+}
+
+.services__pages-game:hover .game__hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*SERVICES END*/
+
+/**/
+
+.accordion {
+    padding-top: 150px;
+}
+
+.ac .ac-trigger::after {
+    content: none;
+}
+
+.ac {
+    border-radius: 20px;
+    background: rgba(255, 87, 255, 0.06);
+    border: none;
+    margin: 0;
+}
+
+.ac .ac-trigger {
+    font: inherit;
+    color: #FFF;
+    font-size: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.list__item {
+    padding: 51px 73px 51px 93px;
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 41px;
+}
+
+.list__item-text {
+    display: flex;
+    gap: 351px;
+    column-gap: 353px;
+}
+
+.list__item-text-lreft,
+.list__item-text-right {
+    padding: 35px 0 0 0;
+}
+
+.list__item-text-right ul {
+    position: relative;
+}
+
+.list__item-icon {
+    display: block;
+    transition: transform .5s;
+}
+
+.is-active .list__item-icon {
+    transform: rotate(45deg);
+}
+
+/**/
+
+.present{
+    padding-top: 221px;
+}
+
+.present__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 428px;
+    border-radius: 20px;
+    border: 2px solid var(--stroke-color, #C536EF);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(115, 113, 255, 0.07) 100%);
+    backdrop-filter: blur(9px);
+    padding: 79px 0 82px 100px;
+}
+
+.present__left{
+    max-width: 616px;
+}
+
+.present__right{
+    position: absolute;
+    right: 164px;
+    bottom: 0;
+    z-index: 5;
+}
+
+.present__title{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 62px;
+    padding-bottom: 15px;
+    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.present__text{
+    color: #B4B4B4;
+    font-size: 20px;
+    line-height: 29px;
+    padding-bottom: 57px;
+}
+
+.application__text{
+    padding-bottom: 63px;
+}
+
+.application__text p{
+    font-size: 32px;
+    padding-left: 176px;
+}
+
+.application__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.application__box{
+    border-radius: 20px;
+    border: 1px solid var(--white, #FFF);
+    background: var(--2nd-btn-style, linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(115, 113, 255, 0.07) 100%));
+    padding: 52px 146px;
+}
+
+.application__box-icon{
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.application__box-text{
+    font-size: 28px;
+    padding-bottom: 37px;
+    text-align: center;
+}
+
+@media (max-width: 1000px){
+    .services__pages-game{
+        display: none;
+    }
+    .services__pages-game-1{
+        display: block;
+        margin: 42px auto 20px;
+    }
+    .present{
+        padding-top: 100px;
+    }
+    .present__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 20px 82px 20px;
+        height: 100%;
+    }
+    .present__right{
+        position: relative;
+        text-align: center;
+        left: 0;
+        bottom: -82px;
+    }
+    .game-1{
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+    .services__pages-title{
+        text-align: center;
+    }
+    .services__pages-text{
+        font-size: 25px;
+        text-align: center;
+    }
+    .pages-text-top{
+        padding-bottom: 50px;
+    }
+    .ac .ac-trigger{
+        font-size: 30px;
+    }
+    .list__item:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .application__text p{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 414px){
+    .services__pages-info{
+        padding-right: 0;
+    }
+    .ac .ac-trigger{
+        font-size: 15px;
+    }
+    .list__item{
+        padding: 17px 15px;
+    }
+    .list__item-text{
+        gap: 0;
+    }
+    .application__box{
+        padding: 26px 73px;
+    }
+    .application__box-text{
+        font-size: 18px;
+    }
+    .application__box-icon{
+        gap: 37px;
+    }
+    .accordion{
+        padding-top: 50px;
+    }
+}
