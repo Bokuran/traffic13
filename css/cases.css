@@ -1,0 +1,24 @@
+.cases__choice{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.cases__choice-1{
+    border-radius: 50px;
+    background: var(--2nd-btn-style, linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(115, 113, 255, 0.07) 100%));
+    padding: 18px 53px;
+    gap: 30px;
+}
+
+.activee{
+    border-radius: 52.114px;
+    background: rgba(255, 0, 255, 0.59);
+    box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
+}
+
+.cases__choices__btn{
+    text-align: center;
+}
