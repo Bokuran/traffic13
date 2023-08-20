@@ -265,8 +265,20 @@
     text-align: center;
 }
 
+.present__right-bg{
+    position: absolute;
+    right: 0;
+}
+
+.present__right-bg-1{
+    display: none;
+}
+
 @media (max-width: 1000px){
     .services__pages-game{
+        display: none;
+    }
+    .present__right-bg{
         display: none;
     }
     .services__pages-game-1{
@@ -314,6 +326,12 @@
     }
     .application__text p{
         padding-left: 0;
+    }
+    .present__right-bg-1{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 768px;
     }
 }
 
