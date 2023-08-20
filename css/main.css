@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #562267;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF57FF;
+    box-shadow: drop-shadow(0px 4px 16px #FF57FF);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF57FF;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 18px;
@@ -23,6 +42,15 @@ button {
     max-width: 1740px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.title__color{
+    font-size: 90px;
+    font-weight: 700;
+    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*HEADER START*/
@@ -205,12 +233,6 @@ button {
 
 /*CASES START*/
 .cases__title {
-    font-size: 90px;
-    font-weight: 700;
-    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     padding-top: 154px;
     padding-bottom: 42px;
 }
@@ -296,12 +318,9 @@ button {
     max-width: 200px;
     white-space: nowrap;
     margin: 67px auto;
-
 }
 
 .cases__button:hover {
-    border-radius: 30px;
-    border: 1px solid #FFF;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.31) 0%, rgba(255, 255, 255, 0.31) 100%);
 }
 
@@ -313,14 +332,7 @@ button {
 }
 
 .slider__title {
-    font-size: 90px;
-    font-weight: 700;
-    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: flex;
-    justify-content: flex-end;
+    text-align: end;
 }
 
 .customers__content {
@@ -328,8 +340,7 @@ button {
 }
 
 .customers__item {
-    display: grid !important;
-    /* Нужно для того что бы перебить дефолтный дисплей слайдера а иначе работать не будет */
+    display: grid !important;/* Нужно для того что бы перебить дефолтный дисплей слайдера а иначе работать не будет */
     align-items: center;
     justify-items: flex-end;
     gap: 80px;
@@ -446,10 +457,6 @@ button {
 .application__title {
     font-size: 78px;
     font-weight: 700;
-    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .application__text-decor {
@@ -457,10 +464,6 @@ button {
 }
 
 .application__text-decor span {
-    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 46px;
 }
 
@@ -470,13 +473,6 @@ button {
 
 .application__name {
     position: relative;
-}
-
-.application__name span {
-    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .footer__time {
